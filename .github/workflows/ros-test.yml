@@ -31,11 +31,14 @@ jobs:
 
         - name: Set up ROS
           uses: ros-tooling/setup-ros@v0.7
-          
-        - name: Set up Action ROS CI
+          with:
+            required-ros-distributions: humble
+            
+        - name: Set up ROS CI
           uses: ros-tooling/action-ros-ci@v0.3
           with:
             package-name: my_package
+            ref: humble
             target-ros2-distro: humble
             vcs-repo-file-url: https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos
 
