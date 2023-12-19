@@ -32,7 +32,7 @@ jobs:
         - name: Install dependencies
           run: |
             pip install --upgrade pip
-            pip install py_trees py_trees_ros rclpy
+            pip install rclpy smach
           
         - name: Test with unittest
           run: |
