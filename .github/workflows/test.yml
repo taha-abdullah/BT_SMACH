@@ -32,7 +32,7 @@ jobs:
         - name: Install dependencies
           run: |
             pip install --upgrade pip
-            sudo apt-get install ros-humble-smach-ros
+            sudo apt-get install ros-humble-smach
           
         - name: Test with unittest
           run: |
