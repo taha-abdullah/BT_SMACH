@@ -32,8 +32,10 @@ jobs:
         - name: Install dependencies
           run: |
             python -m pip install --upgrade pip
-            
-        - name: Test with pytest
+            pip install -r ./request_handler/requirements.txt
+            pip install boto3
+          
+        - name: Test with unittest
           run: |
-            pip install pytest pytest-cov
-            pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+            cd request_handler
+            python -m unittest discover -s ./test  -p 'test_*.py'
