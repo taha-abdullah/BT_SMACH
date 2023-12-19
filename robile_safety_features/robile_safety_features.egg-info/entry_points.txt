@@ -1,0 +1,3 @@
+[console_scripts]
+safety_monitoring_BT = robile_safety_features.safety_monitoring_BT:main
+safety_monitoring_SMACH = robile_safety_features.safety_monitoring_SMACH:main
