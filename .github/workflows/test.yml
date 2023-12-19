@@ -32,3 +32,4 @@ jobs:
         - name: Test with unittest
           run: |
             python -m unittest discover -s ./tests  -p 'test.py'
+            python -m unittest discover -s ./robile_safety_features/robile_safety_features -p 'behavior_test.py'
