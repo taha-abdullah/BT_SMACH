@@ -31,7 +31,7 @@ jobs:
 
         - name: Install dependencies
           run: |
-            pip install pytrees
+            pip install py_trees
           
         - name: Test with unittest
           run: |
