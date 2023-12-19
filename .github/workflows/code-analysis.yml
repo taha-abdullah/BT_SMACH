@@ -1,0 +1,17 @@
+name: code analysis
+
+on: 
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  codacy-analysis-cli:
+    name: code analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@main
+
+      - name: Run Codacy Analysis CLI
+        uses: codacy/codacy-analysis-cli-action@master
