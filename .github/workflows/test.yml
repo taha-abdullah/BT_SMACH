@@ -31,7 +31,7 @@ jobs:
 
         - name: Install dependencies
           run: |
-            pip install py_trees, py_trees_ros, rclpy
+            pip install py_trees py_trees_ros rclpy
           
         - name: Test with unittest
           run: |
